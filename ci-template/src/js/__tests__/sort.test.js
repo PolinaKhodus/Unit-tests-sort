@@ -15,4 +15,13 @@ test('should health', () => {
     {name: 'мечник', health: 10},
   ]
   );
+
+  expect(result).not.toBe([
+    {name: 'маг', health: 100},
+    {name: 'лучник', health: 80},
+    {name: 'мечник', health: 10},
+  ]
+  );
 });
+
+

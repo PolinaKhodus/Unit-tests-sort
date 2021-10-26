@@ -6,7 +6,6 @@ export default function SortPerson(persons) {
       if (a.health < b.health) {
         return 1;
       }
-      
       return 0;
     });
     return persons;
