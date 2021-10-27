@@ -15,6 +15,15 @@ test('should health', () => {
     {name: 'мечник', health: 10},
   ]
   );
+});
+
+  test('should health', () => {
+    const result = SortPerson([
+      {name: 'мечник', health: 10},
+      {name: 'маг', health: 100},
+      {name: 'лучник', health: 80},
+    ]
+    );
 
   expect(result).not.toBe([
     {name: 'маг', health: 100},
